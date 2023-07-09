@@ -41,7 +41,7 @@ function Project() {
      };
 
      return (
-          <div className='flex-col px-4 md:px-8 items-center md:max-w-2xl lg:max-w-6xl mx-auto'>
+          <div className='flex-col px-4 md:px-8 items-center md:max-w-2xl lg:max-w-6xl mx-auto '>
                <div className='flex items-center justify-between'>
                     <div className='text-start flex items-center w-[70%] md:w-[40%] space-x-2'>
                          <h1 ><span className='text-green-500'>#</span>projects</h1>
