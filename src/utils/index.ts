@@ -22,7 +22,7 @@ export const projectOne = [
     techStack: "React Native, Expo",
   },
   {
-    image: "/img/pos.webp",
+    image: "/img/nestPOS.png",
     title: "Nest js Vue POS",
     link: "",
     desc: "This POS Project Build with nestjs,typeorm,Vuejs.",

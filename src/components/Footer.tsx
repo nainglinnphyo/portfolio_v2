@@ -6,7 +6,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='w-full border-t-2 border-[#acb2bf]'>
-      <div className='px-4 md:px-44 lg:px-[26rem] py-2 md:flex max-sm:flex-col justify-between'>
+      <div className='md:max-w-2xl lg:max-w-6xl mx-auto py-2 md:px-8 px-4 md:flex max-sm:flex-col justify-between'>
         <div className='max-sm:flex flex-col text-sm md:text-base'>
           <h1 className='text-start'>Naing Linn Phyo {'< / >'}</h1>
           <h1 className='text-xs'>Fullstack developer based in yangon,Myanmar!</h1>
