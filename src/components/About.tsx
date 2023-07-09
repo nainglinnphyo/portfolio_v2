@@ -62,10 +62,7 @@ function About() {
                          <div className='w-14 h-14 md:w-20 md:h-20 top-10 left-20 md:left-28 absolute'>
                               <Image src={'/img/Dots.svg'} alt={''} width={100} height={100} className='w-full h-full' />
                          </div>
-                         {/* <div className='w-12 h-12 md:w-20 md:h-20 bottom-14 left-5 absolute text-xl rotate-[30deg]'>
-                         <Image src={'/code.svg'} alt={''} width={100} height={100} className='w-full h-full' />
-                         </div> */}
-                         <div className='w-14 h-14 md:w-20 md:h-20 bottom-10 right-4 md:right-0 absolute'>
+                         <div className='w-12 h-12 md:w-20 md:h-20 bottom-10 right-8 md:right-0 absolute'>
                               <Image src={'/img/Dots.svg'} alt={''} width={100} height={100} className='w-full h-full' />
                          </div>
                          <pre>

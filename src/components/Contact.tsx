@@ -60,9 +60,9 @@ function Contact() {
                     </div>
                </div>
                <p className='md:text-base text-sm'>
-                    Whether you have a question, a business inquiry, or simply want to connect, I'm always open to new opportunities and collaborations. Please don't hesitate to reach out, and I'll get back to you as soon as possible. <br />
+                    Whether you have a question want to connect, I'm always open to new opportunities and collaborations. Please don't hesitate to reach out, and I'll get back to you as soon as possible. <br />
                     <br />
-                    Thank you again, and I look forward to hearing from you!
+                    Thank you & see you again,
                </p>
 
           </div>
