@@ -20,13 +20,13 @@ export default function RootLayout({
         <meta property="og:url" content="https://nainglinnphyo.vercel.app/" />
         <meta property="og:title" content="Naing Linn Phyo | fullstack Dev" />
         <meta property="og:description" content="Experienced full-stack developer skilled in building robust web applications. Proficient in front-end and back-end technologies, including JavaScript, Node.js, GoLang , PHP and SQL." />
-        <meta property="og:image" content="https://imgtr.ee/images/2023/06/29/859d62bc5bfcb64f5aa32321bb3f6c5f.png" />
+        <meta property="og:image" content="https://imageupload.io/ib/8UgszgMB3QUZ859_1688909967.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://nainglinnphyo.vercel.app/" />
         <meta property="twitter:title" content="Naing Linn Phyo | fullstack Dev" />
         <meta property="twitter:description" content="Experienced full-stack developer skilled in building robust web applications. Proficient in front-end and back-end technologies, including JavaScript, Node.js, GoLang , PHP and SQL." />
-        <meta property="twitter:image" content="https://imgtr.ee/images/2023/06/29/859d62bc5bfcb64f5aa32321bb3f6c5f.png" />
+        <meta property="twitter:image" content="https://imageupload.io/ib/8UgszgMB3QUZ859_1688909967.png" />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-GL8EBQ92BQ"></script>
         <script
