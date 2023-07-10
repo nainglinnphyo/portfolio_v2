@@ -1,15 +1,15 @@
 export const navbarItems = [
   {
     name: "home",
-    path: "",
+    path: "/",
   },
   {
     name: "works",
-    path: "",
+    path: "/work",
   },
   {
     name: "about-me",
-    path: "",
+    path: "/about-me",
   },
 ];
 

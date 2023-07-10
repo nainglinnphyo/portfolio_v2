@@ -10,32 +10,13 @@ import Skill from '@/components/Skill';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Link from 'next/link';
+import DropDownSocial from '@/components/DropDownSocial';
 
 export default function Home() {
   return (
     <AnimatePresence>
       <motion.div initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} className=''>
-        <div className='left-5 top-0 md:block hidden fixed z-50 '>
-          <div className='h-48 w-[0.08rem] bg-[#acb2bf]'>
-          </div>
-          <div className='absolute -left-4 mt-3 flex flex-col space-y-2'>
-            <Link href='https://github.com/nainglinnphyo' target='_blank'>
-              <Icon icon='mdi:github' color='#acb2bf'
-                className={`h-8 w-8`}
-              />
-            </Link>
-            <Link href='https://www.linkedin.com/in/naing-linn-phyo-768852175/' target='_blank'>
-              <Icon icon='entypo-social:linkedin-with-circle' color='#acb2bf'
-                className={`h-8 w-8`}
-              />
-            </Link>
-            <Link href='https://telegram.me/defined_me' target='_blank'>
-              <Icon icon='ic:baseline-telegram' color='#acb2bf'
-                className={`h-8 w-8`}
-              />
-            </Link>
-          </div>
-        </div>
+        <DropDownSocial />
         <Hero />
         <motion.span className='md:block hidden text-[0.65rem] md:text-sm border border-[#acb2bf] border-r-0 md:max-w-[80px] h-20 mx-auto w-40 md:w-48 right-0 bottom-40 absolute'
           initial={{ opacity: 0.5 }}
@@ -52,9 +33,6 @@ export default function Home() {
           }}
         >
         </motion.div>
-        {/* <motion.div className='md:block hidden -bottom-60 md:max-w-[80px] h-20 mx-auto absolute right-0'>
-          <Image src='/img/Dots.svg' alt={''} width={60} height={60} className='w-full h-full' />
-        </motion.div> */}
 
         <motion.div className='md:block hidden border border-[#acb2bf] border-r-0 -bottom-96 md:max-w-[80px] h-36 mx-auto w-40 md:w-48 right-0 absolute'
           animate={{

@@ -1,7 +1,6 @@
-import NavBar from '@/components/Navbar'
 import './globals.css'
-import Footer from '@/components/Footer'
 import favicon from '@/app/favicon.ico'
+import Wrapper from './wrapper'
 
 export default function RootLayout({
   children,
@@ -41,9 +40,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <NavBar />
-        {children}
-        <Footer />
+        <Wrapper>
+          {children}
+        </Wrapper>
       </body>
     </html>
   )
