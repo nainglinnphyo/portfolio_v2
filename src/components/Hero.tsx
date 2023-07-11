@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 function Hero() {
      return (
           <motion.div className='px-4 md:px-8 h-screen flex flex-col items-center md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto' initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
-               <div className=' md:flex h-full items-center md:text-start text-center flex-col-reverse flex md:flex-row max-w-4xl mx-auto'>
+               <div className=' md:flex items-center md:text-start text-center flex-col-reverse flex md:flex-row max-w-4xl mx-auto'>
                     <div className='md:mt-0 mt-2 w-full overflow-hidden'>
                          <div className='mt-2 md:mt-0'>
                               <h1 className='md:text-sm text-xl font-medium tracking-tight text-start '  >
@@ -55,7 +55,7 @@ function Hero() {
                          </div>
                     </div>
                </div>
-               <div className='md:mt-32 mt-10 relative max-w-xl mx-auto h-full'>
+               <div className='md:mt-32 mt-10 relative max-w-xl mx-auto'>
                     <Image src='/img/QuotOne.svg' width={15} height={15} alt={''} className='absolute -top-2 z-10 bg-[#282C34] left-2' />
                     <Image src='/img/QuotOne.svg' width={15} height={15} alt={''} className='absolute right-8 -bottom-1 z-10 bg-[#282C34]' />
                     <div className='h-12 text-[0.7rem] md:text-lg border border-[#acb2bf] md:max-w-[600px] mx-auto'>
