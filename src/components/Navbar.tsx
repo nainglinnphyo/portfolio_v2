@@ -16,7 +16,6 @@ function NavBar() {
                if (window.innerWidth >= 700) {
                     setOpen(false)
                }
-
           };
 
           window.addEventListener('resize', handleResize);
@@ -26,12 +25,14 @@ function NavBar() {
           };
      }, []);
 
-     const pathName = usePathname();
-     console.log(pathName);
+     useEffect(() => {
+          document.body.style.position = open ? 'fixed' : 'static'
+     }, [open])
 
+     const pathName = usePathname();
 
      return (
-          <motion.div className='flex h-16 items-center p-4 md:px-8 md:max-w-2xl lg:max-w-6xl mx-auto justify-between  sticky top-0 bg-[#282C34] z-10' initial={{ translateY: -500 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
+          <motion.div className='flex h-16 items-center p-4 md:px-8 md:max-w-2xl lg:max-w-6xl mx-auto justify-between  sticky top-0 bg-[#282C34] z-20' initial={{ translateY: -500 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
                <Image src="/code.svg" alt="" className='h-8' width={40} height={20} />
                <div className={` ${open ? 'h-full bg-[#282c34] fixed inset-0 justify-center flex-col flex items-start text-start' : 'flex'}`}>
                     {navbarItems.map((i) => {

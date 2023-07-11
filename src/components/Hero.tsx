@@ -8,36 +8,38 @@ function Hero() {
      return (
           <motion.div className='flex-col px-4 md:px-8 h-screen  md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto' initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
                <div className=' md:flex items-center md:text-start text-center flex-col-reverse flex md:flex-row max-w-4xl mx-auto'>
-                    <div className='md:mt-0 mt-2 w-full'>
-                         <h1 className='md:text-sm text-xl font-medium tracking-tight text-start '>
-                              <pre className='md:text-sm text-[0.62rem] leading-3'>
-                                   <code className='text-start'>
-                                        {`
+                    <div className='md:mt-0 mt-2 w-full overflow-hidden'>
+                         <motion.div animate={{ y: 0 }} initial={{ y: '100%' }} transition={{ delay: 0.5, duration: 0.5 }}>
+                              <h1 className='md:text-sm text-xl font-medium tracking-tight text-start '  >
+                                   <pre className='md:text-sm text-[0.62rem] leading-3'>
+                                        <code className='text-start'>
+                                             {`
    _  __     _             __   _             ___  __           
   / |/ /__ _(_)__  ___ _  / /  (_)__  ___    / _ \\/ /  __ _____ 
  /    / _ \`/ / _ \\/ _ \`/ / /__/ / _ \\/ _ \\  / ___/ _ \\/ // / _ \\
 /_/|_/\\_,_/_/_//_/\\_, / /____/_/_//_/_//_/ /_/  /_//_/\\_, /\\___/
                  /___/                               /___/`
-                                        }
-                                   </code>
-                              </pre>
-                              <br />
-                              <TypeAnimation
-                                   className='md:text-xl text-base'
-                                   sequence={[
-                                        'I build & develop web app 🌐',
-                                        2000,
-                                        'I build & develop cross platform 📱',
-                                        2000,
-                                   ]}
-                                   style={{ color: '#21c55d' }}
-                                   speed={50}
-                                   repeat={Infinity}
-                              />
-                         </h1>
-                         <h1 className='md:text-sm text-xs mt-4 text-[#9398a4] text-start'>
-                              I'm a skilled fullstack developer proficient <br /> in JavaScript, TypeScript, PHP, and Golang.
-                         </h1>
+                                             }
+                                        </code>
+                                   </pre>
+                                   <br />
+                                   <TypeAnimation
+                                        className='md:text-xl text-base'
+                                        sequence={[
+                                             'I build & develop web app 🌐',
+                                             2000,
+                                             'I build & develop cross platform 📱',
+                                             2000,
+                                        ]}
+                                        style={{ color: '#21c55d' }}
+                                        speed={50}
+                                        repeat={Infinity}
+                                   />
+                              </h1>
+                              <h1 className='md:text-sm text-xs mt-4 text-[#9398a4] text-start'>
+                                   I'm a skilled fullstack developer proficient <br /> in JavaScript, TypeScript, PHP, and Golang.
+                              </h1>
+                         </motion.div>
                     </div>
                     <div className='flex-col flex items-center md:w-1/3 relative'>
                          <div className='w-12 h-12 top-28 right-2 absolute text-xl -rotate-12'>
