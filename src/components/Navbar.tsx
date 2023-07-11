@@ -39,7 +39,7 @@ function NavBar() {
                          return (
                               <div key={i.name} className={`${open ? 'mb-10 text-2xl' : 'hidden'} md:flex pl-8`}>
                                    <div className='flex'>
-                                        <span className='text-green-500'>#</span><Link href={i.path} className={pathName === i.path ? 'text-white' : ''}>{i.name}</Link>
+                                        <span className='text-green-500'>#</span><Link href={i.path} className={`hover:text-white ${pathName === i.path ? 'text-white' : ''}`}>{i.name}</Link>
                                    </div>
                               </div>
                          )

@@ -8,7 +8,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
 
      const cursorX = useMotionValue(-100);
      const cursorY = useMotionValue(-100);
-     const springConfig = { damping: 80, stiffness: 400 };
+     const springConfig = { damping: 30, stiffness: 400 };
      const cursorXSpring = useSpring(cursorX, springConfig);
      const cursorYSpring = useSpring(cursorY, springConfig);
 
@@ -29,7 +29,8 @@ function Wrapper({ children }: { children: React.ReactNode }) {
                     translateX: cursorXSpring,
                     translateY: cursorYSpring,
                }}>
-                    <div className='w-1 h-1 bg-[#abb1be] rounded-full'></div>
+                    <motion.div className='w-1 h-1 bg-[#abb1be] rounded-full'>
+                    </motion.div>
                </motion.div>
                <NavBar />
                {children}
