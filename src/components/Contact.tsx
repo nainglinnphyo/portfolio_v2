@@ -87,11 +87,11 @@ function Contact() {
                               </div>
                               <div className='w-full py-1'>
                                    <h1 className='md:text-base text-sm'>Your email</h1>
-                                   <input required type="text" value={email} name="" onChange={(e) => setEmail(e.target.value)} className='w-full p-2 h-8 focus:outline-none bg-[#edf1f4] md:text-sm text-sm' id="" placeholder='Enter your name.' />
+                                   <input required type="text" value={email} name="" onChange={(e) => setEmail(e.target.value)} className='w-full p-2 h-8 focus:outline-none bg-[#edf1f4] md:text-sm text-sm' id="" placeholder='Enter your email.' />
                               </div>
                               <div className='w-full py-1'>
                                    <h1 className='md:text-base text-sm'>Message</h1>
-                                   <textarea required name="" value={message} onChange={(e) => setMessage(e.target.value)} className='w-full p-2 h-28 focus:outline-none bg-[#edf1f4] md:text-sm text-sm' id="" placeholder='Enter your name.' />
+                                   <textarea required name="" value={message} onChange={(e) => setMessage(e.target.value)} className='w-full p-2 h-28 focus:outline-none bg-[#edf1f4] md:text-sm text-sm' id="" placeholder='Type a message...' />
                               </div>
                               <motion.div className='w-max border border-green-500 flex px-2  py-2 items-center hover:shadow-md'
                                    whileHover={{
