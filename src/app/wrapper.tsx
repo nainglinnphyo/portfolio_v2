@@ -8,7 +8,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
 
      const backWardX = useMotionValue(-100);
      const backWardY = useMotionValue(-100);
-     const backWardSpringConfig = { damping: 30, stiffness: 180 };
+     const backWardSpringConfig = { damping: 20, stiffness: 160 };
      const backWardXSpring = useSpring(backWardX, backWardSpringConfig);
      const backWardYSpring = useSpring(backWardY, backWardSpringConfig);
 
@@ -20,29 +20,31 @@ function Wrapper({ children }: { children: React.ReactNode }) {
 
      useEffect(() => {
           const moveCursor = (e: any) => {
+               console.log(e.clientX, e.clientY);
+
                cursorX.set(e.clientX - 0)
                cursorY.set(e.clientY - 0)
           };
           const backWardMoveCursor = (e: any) => {
-               backWardX.set(e.clientX - 12)
-               backWardY.set(e.clientY - 12)
+               backWardX.set(e.clientX - 9)
+               backWardY.set(e.clientY - 9)
           };
           window.addEventListener('mousemove', moveCursor)
           window.addEventListener('mousemove', backWardMoveCursor)
-          // window.addEventListener('mouseenter', moveCursor)
           return () => {
                window.removeEventListener('mousemove', backWardMoveCursor)
                window.removeEventListener('mousemove', moveCursor)
           }
      }, [])
+
      return (
           <div>
-               <motion.div className='w-2 h-2 bg-[#abb1be] rounded-full absolute z-[9999]' style={{
+               <motion.div className='pointer-events-none w-[0.35rem] h-[0.35rem] bg-[#abb1be] rounded-full z-[9999] fixed' style={{
                     translateX: cursorXSpring,
                     translateY: cursorYSpring,
                }}>
                </motion.div>
-               <motion.div className={`pointer-events-none w-8 h-8 rounded-full border border-[#abb1be] z-[9999] absolute`} style={{
+               <motion.div className={`pointer-events-none w-6 h-6 rounded-full border-[2px] border-[#abb1be] z-[9999] fixed`} style={{
                     translateX: backWardXSpring,
                     translateY: backWardYSpring,
                }}>

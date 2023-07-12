@@ -49,14 +49,12 @@ function Contact() {
                     <h1 className='md:text-base text-sm md:w-1/2 text-start'>Thank you for your interest in reaching out to me. I would love to hear from you! Please feel free to get in touch using the contact information provided below.</h1>
                     <div className='w-max h-max border border-[#acb2bf] p-4'>
                          <h1>Message me here</h1>
-                         <div className='flex items-center py-2'>
-                              <Icon icon='ic:baseline-telegram' width={20} height={20} />
-                              <h1 className='pl-1'>@defined_me</h1>
-                         </div>
-                         <div className='flex items-center'>
-                              <Icon icon='material-symbols:mail' width={20} height={20} />
-                              <h1 className='pl-1'>nainglinnphyo24@gmail.com</h1>
-                         </div>
+                         <form action="">
+                              <div>
+                                   <h1 className='md:text-base'>Your Name</h1>
+                                   <input type="text" name="" className='p-2' id="" placeholder='Enter your name.' />
+                              </div>
+                         </form>
                     </div>
                </div>
                <p className='md:text-base text-sm'>
