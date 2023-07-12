@@ -20,8 +20,6 @@ function Wrapper({ children }: { children: React.ReactNode }) {
 
      useEffect(() => {
           const moveCursor = (e: any) => {
-               console.log(e.clientX, e.clientY);
-
                cursorX.set(e.clientX - 0)
                cursorY.set(e.clientY - 0)
           };
