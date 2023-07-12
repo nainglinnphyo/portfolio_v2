@@ -50,7 +50,7 @@ export default function Home() {
           }}
         >
         </motion.div>
-        <motion.div className='md:block hidden -bottom-[100rem] md:max-w-[80px] h-40 mx-auto absolute right-0'>
+        <motion.div className='md:block hidden -bottom-[60rem] md:max-w-[80px] h-40 mx-auto absolute right-0'>
           <Image src='/img/DotsOne.svg' alt={''} width={60} height={60} className='w-full h-full rotate-180' />
         </motion.div>
         <motion.div className='md:block hidden -bottom-[130rem] md:max-w-[80px] h-40 mx-auto absolute right-0'>

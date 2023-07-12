@@ -56,7 +56,12 @@ function About() {
                          <p className='pt-4 text-base md:text-lg'>Hello, I'm Naing Linn Phyo!</p>
                          <p className='md:pt-6 pt-4 text-sm md:text-base'> I'm a skilled fullstack developer proficient in JavaScript, TypeScript, PHP, and Golang. With expertise in frontend and backend development, I create powerful and responsive web applications.</p>
                          <p className='md:py-6 py-4 text-sm md:text-base'>Currently, I am actively involved in the development of <a href="https://farytaxi.com" className='text-green-500' target='_blank'>farytaxi.com</a> and <a href="https://getbak.co" className='text-green-500' target='_blank'>getbak.co</a>, microservices technologies like gRPC and Redis to build efficient and scalable solutions.</p>
-                         <div className='border border-green-500 w-max p-2 md:text-sm text-xs'><Link href={''} className=''>Read more {'->'}</Link></div>
+                         <motion.div
+                              whileHover={{
+                                   x: 0,
+                                   boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.3)",
+                              }}
+                              className='border border-green-500 w-max p-2 md:text-sm text-xs'><Link href={''} className=''>Read more {'->'}</Link></motion.div>
                     </div>
                     <div className='md:w-1/2 text-[0.36rem] md:text-[0.6rem] leading-2 relative'>
                          <div className='w-14 h-14 md:w-20 hidden md:block md:h-20 top-10 left-10 md:left-4 absolute'>

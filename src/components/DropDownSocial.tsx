@@ -23,6 +23,11 @@ function DropDownSocial() {
                               className={`h-6 w-6`}
                          />
                     </Link>
+                    <Link href='https://instagram.com/naing_linnphyo' target='_blank'>
+                         <Icon icon='ri:instagram-line' color='#acb2bf'
+                              className={`h-6 w-6`}
+                         />
+                    </Link>
                </div>
           </div>
      )
