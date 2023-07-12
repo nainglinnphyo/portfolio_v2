@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <AnimatePresence>
       <motion.div initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} className=''>
-        <DropDownSocial />
         <Hero />
         <motion.span className='md:block hidden text-[0.65rem] md:text-sm border border-[#acb2bf] border-r-0 md:max-w-[80px] h-20 mx-auto w-40 md:w-48 right-0 bottom-40 absolute'
           initial={{ opacity: 0.5 }}

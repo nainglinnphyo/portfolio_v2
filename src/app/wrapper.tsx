@@ -1,4 +1,5 @@
 'use client'
+import DropDownSocial from '@/components/DropDownSocial'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/Navbar'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
@@ -48,6 +49,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
                }}>
                </motion.div>
                <NavBar />
+               <DropDownSocial />
                {children}
                <Footer />
           </div>
