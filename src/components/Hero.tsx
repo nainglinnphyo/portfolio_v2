@@ -22,7 +22,7 @@ function Hero() {
                                              }
                                         </code>
                                    </pre>
-                                   {/* <br /> */}
+                                   <br className='hidden md:block' />
                                    <span className='md:text-lg text-base'>I build & develop <span className='text-green-500'>web app</span>  <br className='md:hidden' /> and  <span className='text-green-500'>cross platform</span>!</span>
                                    {/* <TypeAnimation
                                         className='md:text-xl text-base'
