@@ -23,7 +23,7 @@ function Hero() {
                                         </code>
                                    </pre>
                                    <br />
-                                   <span className='md:text-lg'>I build & develop <span className='text-green-500'>web app</span>  <br className='md:hidden'/> and  <span className='text-green-500'>cross platform</span>!</span>
+                                   <span className='md:text-lg text-base'>I build & develop <span className='text-green-500'>web app</span>  <br className='md:hidden' /> and  <span className='text-green-500'>cross platform</span>!</span>
                                    {/* <TypeAnimation
                                         className='md:text-xl text-base'
                                         sequence={[
