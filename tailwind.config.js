@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        jetbrain: [
+          "JetBrains Mono",
+          {
+            fontFeatureSettings: '"cv11", "ss01"',
+            fontVariationSettings: '"opsz" 32'
+          },
+        ],
+      },
       screens: {
         // lsm: 'px',
       },

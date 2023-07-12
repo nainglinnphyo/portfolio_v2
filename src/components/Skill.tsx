@@ -92,7 +92,7 @@ function Skill() {
                               <div className='p-2'>
                                    Vs Code Linux <br />
                                    Ubuntu Server <br />
-                                   Nginx Apachae <br />
+                                   Nginx Apache <br />
                                    Jest Docker 
                               </div>
                          </div>
