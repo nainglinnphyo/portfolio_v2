@@ -23,7 +23,8 @@ function Hero() {
                                         </code>
                                    </pre>
                                    <br />
-                                   <TypeAnimation
+                                   <span className='md:text-lg'>I build & develop <span className='text-green-500'>web app</span>  <br className='md:hidden'/> and  <span className='text-green-500'>cross platform</span>!</span>
+                                   {/* <TypeAnimation
                                         className='md:text-xl text-base'
                                         sequence={[
                                              'I build & develop web app!',
@@ -34,7 +35,7 @@ function Hero() {
                                         style={{ color: '#21c55d' }}
                                         speed={50}
                                         repeat={Infinity}
-                                   />
+                                   /> */}
                               </h1>
                               <h1 className='md:text-sm text-xs mt-4 text-[#9398a4] text-start'>
                                    I'm a skilled fullstack developer proficient <br /> in JavaScript, TypeScript, PHP, and Golang.
