@@ -164,7 +164,7 @@ function AboutPage() {
                          <div className='flex gap-3 mt-2 flex-wrap md:text-base text-sm'>
                               <h1 className='border border-[#acb2bf] py-1 px-2'>I enjoy live coding!</h1>
                               <h1 className='border border-[#acb2bf] py-1 px-2'>I like playing video games and football!</h1>
-                              <h1 className='border border-[#acb2bf] py-1 px-2'>I like to get drunk ever TGIF!</h1>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>I like to get drunk every TGIF!</h1>
                               <h1 className='border border-[#acb2bf] py-1 px-2'>I don’t have any siblings!</h1>
                               <h1 className='border border-[#acb2bf] py-1 px-2'>I also like travel!</h1>
                               <h1 className='border border-[#acb2bf] py-1 px-2'>Favourite Programming Language is Golang!</h1>
