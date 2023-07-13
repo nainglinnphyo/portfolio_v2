@@ -37,7 +37,7 @@ function Hero() {
                                         repeat={Infinity}
                                    /> */}
                               </h1>
-                              <h1 className='md:text-sm text-xs mt-4 text-[#9398a4] text-start'>
+                              <h1 className='md:text-sm text-xs mt-2 text-[#9398a4] text-start'>
                                    I'm a skilled fullstack developer proficient <br /> in JavaScript, TypeScript, PHP, and Golang.
                               </h1>
                          </div>
@@ -46,8 +46,8 @@ function Hero() {
                          <div className='w-12 h-12 top-28 right-2 absolute text-xl -rotate-12'>
                               <Image src={'/code.svg'} alt={''} width={100} height={100} className='w-full h-full' />
                          </div>
-                         <div className='md:w-full md:h-full w-[95%] h-[95%]'>
-                              <Image src='/img/LastMyPic.png' width={500} height={500} alt='' className='w-full h-full' />
+                         <div className='md:w-full md:h-full w-[95%] h-[95%] '>
+                              <Image src='/img/MyPhoto.png' width={500} height={500} alt='' className='w-full h-full' />
                          </div>
                          <div className='w-60 h-8 md:w-64 border border-[#acb2bf] flex items-center'>
                               <div className=' ml-2 w-4 h-4 bg-green-500'>
@@ -56,7 +56,7 @@ function Hero() {
                          </div>
                     </div>
                </div>
-               <div className='md:mt-32 mt-10 relative max-w-xl mx-auto'>
+               <div className='md:mt-32 mt-4 relative max-w-xl mx-auto'>
                     <Image src='/img/QuotOne.svg' width={15} height={15} alt={''} className='absolute -top-2 z-10 bg-[#282C34] left-2' />
                     <Image src='/img/QuotOne.svg' width={15} height={15} alt={''} className='absolute right-8 -bottom-1 z-10 bg-[#282C34]' />
                     <div className='h-12 text-[0.7rem] md:text-lg border border-[#acb2bf] md:max-w-[600px] mx-auto'>

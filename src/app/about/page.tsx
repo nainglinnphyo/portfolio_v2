@@ -1,21 +1,43 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '@/styles/about.module.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image'
+import emailjs from '@emailjs/browser';
+import { Icon } from '@iconify/react';
 
 function AboutPage() {
+     const [name, setName] = useState('')
+     const [email, setEmail] = useState('')
+     const [message, setMessage] = useState('')
+
+     const submit = (e: React.FormEvent<HTMLFormElement>) => {
+          e.preventDefault();
+          emailjs.send('service_98k553b', 'template_aj3m5of', { from_name: name, from_email: email, message: message }, 'JbaGMvyx_V1H0YdE0')
+               .then((response) => {
+                    setName('')
+                    setEmail('')
+                    setMessage('')
+                    console.log('SUCCESS!', response.status, response.text);
+               }, (err) => {
+                    setName('')
+                    setEmail('')
+                    setMessage('')
+                    console.log('FAILED...', err);
+               });
+     }
+
      return (
-          <div className='flex flex-col gap-y-3 px-4 md:px-8 md:pt-10 pt-5 md:max-w-2xl lg:max-w-6xl mx-auto '>
+          <motion.div className='flex flex-col gap-y-3 px-4 md:px-8 md:pt-10 pt-5 md:max-w-2xl lg:max-w-6xl mx-auto '
+               initial={{ opacity: 0, scale: 0.5 }}
+               animate={{ opacity: 1, scale: 1 }}
+               transition={{ duration: 0.5 }}
+          >
                <div className='w-full px-2 '>
                     <h1 className='md:text-xl text-lg'><span className='font-extrabold text-green-500'>/</span>about-me</h1>
                     <span className='md:text-sm'>Who am i?</span>
                </div>
-               <motion.div className='max-w-[100%] md:text-[0.9rem] md:leading-5 font-jetbrain text-xs w-full'
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-               >
+               <div className='max-w-[100%] md:text-[0.9rem] md:leading-5 font-jetbrain text-xs w-full'>
                     <div className='flex space-x-3 hover:bg-[#362c3d] px-2 py-1 w-full'>
                          <div className='text-[#8b59a7]'>@Injectable()</div>
                     </div>
@@ -157,7 +179,7 @@ function AboutPage() {
                     <div className='flex hover:bg-[#362c3d] px-2 py-1'>
                          {'}'}
                     </div>
-               </motion.div>
+               </div>
                <div className='w-full px-2  pt-8 pb-10'>
                     <h1 className='md:text-xl text-lg'><span className='font-extrabold text-green-500'>#</span>fun-facts</h1>
                     <div className='md:w-[70%] md:flex w-full'>
@@ -176,7 +198,44 @@ function AboutPage() {
                          </div>
                     </div>
                </div>
-          </div>
+               <div className='md:flex mb-8 px-2 max-sm:flex-col justify-between items-center space-y-6 gap-10'>
+                    <div className='md:w-[65%] '>
+                         <h1 className='md:text-base text-sm text-start'>Thank you for your interest in reaching out to me. I would love to hear from you! Please feel free to get in touch using the contact information provided below.</h1>
+                         <br />
+                         <p className='md:text-base text-sm'>
+                              Whether you have a question want to connect, I'm always open to new opportunities and collaborations. Please don't hesitate to reach out, and I'll get back to you as soon as possible. <br />
+                              <br />
+                              Thank you & see you again,
+                         </p>
+                    </div>
+                    <div className='md:w-[35%] h-max border border-[#acb2bf] px-4 space-y-2 py-5'>
+                         <h1>Message me here</h1>
+                         <form onSubmit={submit} className='w-full gap-y-2 flex flex-col'>
+                              <div className='w-full py-1 '>
+                                   <h1 className='md:text-base text-sm'>Your Name</h1>
+                                   <input required type="text" value={name} onChange={(e) => setName(e.target.value)} name="" className='w-full p-2 h-8 focus:outline-none bg-[#edf1f4] md:text-sm text-sm' id="" placeholder='Enter your name.' />
+                              </div>
+                              <div className='w-full py-1'>
+                                   <h1 className='md:text-base text-sm'>Your email</h1>
+                                   <input required type="text" value={email} name="" onChange={(e) => setEmail(e.target.value)} className='w-full p-2 h-8 focus:outline-none bg-[#edf1f4] md:text-sm text-sm' id="" placeholder='Enter your email.' />
+                              </div>
+                              <div className='w-full py-1'>
+                                   <h1 className='md:text-base text-sm'>Message</h1>
+                                   <textarea required name="" value={message} onChange={(e) => setMessage(e.target.value)} className='w-full p-2 h-28 focus:outline-none bg-[#edf1f4] md:text-sm text-sm' id="" placeholder='Type a message...' />
+                              </div>
+                              <motion.div className='w-max border border-green-500 flex px-2  py-2 items-center hover:shadow-md'
+                                   whileHover={{
+                                        x: 0,
+                                        boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.3)",
+                                   }}
+                              >
+                                   <button className='md:text-sm text-sm'>Just Send</button>
+                                   <Icon icon='iconoir:arrow-tr' />
+                              </motion.div>
+                         </form>
+                    </div>
+               </div>
+          </motion.div>
      )
 }
 

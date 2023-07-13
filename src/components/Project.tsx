@@ -61,9 +61,9 @@ function Project() {
                          projectOne.map((p) => {
                               return (
                                    <div className='border-[1.5px] border-[#acb2bf]' key={p.title}>
-                                        <div className='w-full h-44 relative'>
+                                        {/* <div className='w-full h-44 relative'>
                                              <Image src={p.image} alt={''} fill className='object-cover w-full h-full border-b-[1.5px] border-[#acb2bf]' />
-                                        </div>
+                                        </div> */}
                                         <h1 className='p-2 border-b-[1.5px] border-[#acb2bf]'>{p.techStack}</h1>
                                         <div className='p-2 flex flex-col justify-center h-auto space-y-4'>
                                              <h1 className=''>{p.title}</h1>
