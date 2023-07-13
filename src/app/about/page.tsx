@@ -2,13 +2,14 @@
 import React from 'react'
 import styles from '@/styles/about.module.css';
 import { motion } from 'framer-motion';
+import Image from 'next/image'
 
 function AboutPage() {
      return (
-          <div className='flex flex-col gap-y-3 px-4 md:px-8 md:pt-10 pt-5 md:max-w-2xl lg:max-w-6xl mx-auto items-center'>
+          <div className='flex flex-col gap-y-3 px-4 md:px-8 md:pt-10 pt-5 md:max-w-2xl lg:max-w-6xl mx-auto '>
                <div className='w-full px-2 '>
                     <h1 className='md:text-xl text-lg'><span className='font-extrabold text-green-500'>/</span>about-me</h1>
-                    <span>Who am i?</span>
+                    <span className='md:text-sm'>Who am i?</span>
                </div>
                <motion.div className='max-w-[100%] md:text-[0.9rem] md:leading-5 font-jetbrain text-xs w-full'
                     initial={{ opacity: 0, scale: 0.5 }}
@@ -156,8 +157,25 @@ function AboutPage() {
                     <div className='flex hover:bg-[#362c3d] px-2 py-1'>
                          {'}'}
                     </div>
-
                </motion.div>
+               <div className='w-full px-2  pt-8 pb-10'>
+                    <h1 className='md:text-xl text-lg'><span className='font-extrabold text-green-500'>#</span>fun-facts</h1>
+                    <div className='md:w-[70%] md:flex w-full'>
+                         <div className='flex gap-3 mt-2 flex-wrap md:text-base text-sm'>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>I enjoy live coding!</h1>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>I like playing video games and football!</h1>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>I like to get drunk ever TGIF!</h1>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>I don’t have any siblings!</h1>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>I also like travel!</h1>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>Favourite Programming Language is Golang!</h1>
+                              <h1 className='border border-[#acb2bf] py-1 px-2'>Enjoy new to learning technology!</h1>
+                         </div>
+                         <div className='hidden md:block w-[30%] relative '>
+                              <Image src='/img/Dots.svg' alt={''} width={40} height={40} className='w-full h-full absolute left-28' />
+                              <Image src='/img/Dots.svg' alt={''} width={40} height={40} className='w-full h-full absolute left-56 -top-16' />
+                         </div>
+                    </div>
+               </div>
           </div>
      )
 }
