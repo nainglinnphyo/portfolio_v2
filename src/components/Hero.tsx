@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 function Hero() {
      return (
-          <motion.div className="px-4 md:px-8 h-screen flex flex-col items-center md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto bg-[url('/img/bg.svg')]" initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
+          <motion.div className="px-4 md:px-8 h-full md:mb-48 mb-40 flex flex-col items-center md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto bg-[url('/img/bg.svg')]" initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
                <div className=' md:flex items-center md:text-start text-center flex-col-reverse flex md:flex-row max-w-4xl mx-auto'>
                     <div className='md:mt-0 mt-2 w-full overflow-hidden'>
                          <div className='mt-2 md:mt-0'>
@@ -67,6 +67,13 @@ function Hero() {
                          <h1 className='py-4 md:py-3 px-2'>What Can i help you❓</h1>
                     </span>
                </div>
+               <motion.div className='w-5 h-9 rounded-3xl border border-[#acb2bf] absolute bottom-6 flex items-center justify-center' initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} >
+                    <motion.div className='w-[0.4rem] h-[0.4rem] rounded-full bg-[#acb2bf] mb-5'
+                         animate={{ y: [0, 20, 0] }}
+                         transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }}
+                    >
+                    </motion.div>
+               </motion.div>
           </motion.div >
      )
 }

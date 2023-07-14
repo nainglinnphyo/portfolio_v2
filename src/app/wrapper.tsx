@@ -38,12 +38,12 @@ function Wrapper({ children }: { children: React.ReactNode }) {
 
      return (
           <div>
-               <motion.div className='pointer-events-none w-[0.35rem] h-[0.35rem] bg-[#abb1be] rounded-full z-[9999] fixed' style={{
+               <motion.div className='hidden md:block pointer-events-none w-[0.35rem] h-[0.35rem] bg-[#abb1be] rounded-full z-[9999] fixed' style={{
                     translateX: cursorXSpring,
                     translateY: cursorYSpring,
                }}>
                </motion.div>
-               <motion.div className={`pointer-events-none w-6 h-6 rounded-full border-[2px] border-[#abb1be] z-[9999] fixed`} style={{
+               <motion.div className={`hidden md:block pointer-events-none w-6 h-6 rounded-full border-[2px] border-[#abb1be] z-[9999] fixed`} style={{
                     translateX: backWardXSpring,
                     translateY: backWardYSpring,
                }}>

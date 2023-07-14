@@ -55,13 +55,6 @@ export default function Home() {
         <motion.div className='md:block hidden -bottom-[130rem] md:max-w-[80px] h-40 mx-auto absolute right-0'>
           <Image src='/img/DotsOne.svg' alt={''} width={20} height={60} className='w-full h-full rotate-180' />
         </motion.div>
-        <motion.div className='left-1/2 w-5 h-9 rounded-3xl border border-[#acb2bf] absolute md:bottom-16 bottom-6 flex items-center justify-center' initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} >
-          <motion.div className='w-[0.4rem] h-[0.4rem] rounded-full bg-[#acb2bf] mb-5'
-            animate={{ y: [0, 20, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }}
-          >
-          </motion.div>
-        </motion.div>
         <About />
         <Contact />
       </motion.div>
