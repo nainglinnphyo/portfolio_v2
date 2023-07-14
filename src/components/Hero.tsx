@@ -63,7 +63,7 @@ function Hero() {
                          <h1 className='py-4 md:py-2 px-2'>Writing reusable, testable, and efficient code!🔥</h1>
 
                     </div>
-                    <span className='text-[0.65rem] md:text-sm border border-[#acb2bf] border-t-0 right-0 md:max-w-[200px] mx-auto absolute w-40 md:w-48' >
+                    <span className='w-max text-[0.65rem] md:text-sm border border-[#acb2bf] border-t-0 right-0 md:max-w-[200px] mx-auto absolute ' >
                          <h1 className='py-4 md:py-3 px-2'>What Can i help you❓</h1>
                     </span>
                     <motion.div className='left-1/2 w-5 h-9 rounded-3xl md:-bottom-24 -bottom-28 border border-[#acb2bf] absolute flex items-center justify-center' initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} >
