@@ -56,15 +56,15 @@ function Hero() {
                          </div>
                     </div>
                </div>
-               <div className='md:mt-32 mt-4 relative'>
+               <div className='md:mt-32 mt-4 max-w-xl mx-auto relative'>
                     <Image src='/img/QuotOne.svg' width={15} height={15} alt={''} className='absolute -top-2 z-10 bg-[#282C34] left-2' />
                     <Image src='/img/QuotOne.svg' width={15} height={15} alt={''} className='absolute right-8 -bottom-1 z-10 bg-[#282C34]' />
                     <div className='h-12 text-[0.7rem] md:text-lg border border-[#acb2bf] md:max-w-[600px] mx-auto'>
                          <h1 className='py-4 md:py-2 px-2'>Writing reusable, testable, and efficient code!🔥</h1>
 
                     </div>
-                    <span className='h-12 text-[0.65rem] md:text-sm border border-[#acb2bf] border-t-0 right-0 md:max-w-[200px] mx-auto absolute w-40 md:w-48' >
-                         <h1 className='py-4 md:py-3 px-2'>What Can i help you❓</h1>
+                    <span className='h-14 text-[0.65rem] md:text-sm border border-[#acb2bf] border-t-0 right-0 md:max-w-[200px] mx-auto absolute w-40 md:w-48' >
+                         <h1 className='py-3 md:py-3 px-2 md:text-base text-sm'>What Can i help you❓</h1>
                     </span>
                     <motion.div className='left-1/2 w-5 h-9 rounded-3xl md:-bottom-24 -bottom-28 border border-[#acb2bf] absolute flex items-center justify-center' initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} >
                          <motion.div className='w-[0.4rem] h-[0.4rem] rounded-full bg-[#acb2bf] mb-5'
