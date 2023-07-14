@@ -66,7 +66,7 @@ function Hero() {
                     <span className='h-12 text-[0.65rem] md:text-sm border border-[#acb2bf] border-t-0 right-0 md:max-w-[200px] mx-auto absolute w-40 md:w-48' >
                          <h1 className='py-4 md:py-3 px-2'>What Can i help you❓</h1>
                     </span>
-                    <motion.div className='left-1/2 w-5 h-9 rounded-3xl -bottom-32 border border-[#acb2bf] absolute flex items-center justify-center' initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} >
+                    <motion.div className='left-1/2 w-5 h-9 rounded-3xl md:-bottom-24 -bottom-28 border border-[#acb2bf] absolute flex items-center justify-center' initial={{ opacity: 0, }} animate={{ opacity: 1, }} exit={{ opacity: 0 }} >
                          <motion.div className='w-[0.4rem] h-[0.4rem] rounded-full bg-[#acb2bf] mb-5'
                               animate={{ y: [0, 20, 0] }}
                               transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }}

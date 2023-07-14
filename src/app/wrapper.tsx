@@ -7,9 +7,9 @@ import React, { useEffect, useState } from 'react'
 
 function Wrapper({ children }: { children: React.ReactNode }) {
 
-     const backWardX = useMotionValue(-100);
-     const backWardY = useMotionValue(-100);
-     const backWardSpringConfig = { damping: 20, stiffness: 160 };
+     const backWardX = useMotionValue(-10);
+     const backWardY = useMotionValue(-10);
+     const backWardSpringConfig = { damping: 30, stiffness: 200 };
      const backWardXSpring = useSpring(backWardX, backWardSpringConfig);
      const backWardYSpring = useSpring(backWardY, backWardSpringConfig);
 
