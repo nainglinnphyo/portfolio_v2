@@ -53,7 +53,7 @@ function Project() {
 
                     </div>
                     <div>
-                         <h1 className='text-xs'><Link href=''>View all {'~~>'}</Link></h1>
+                         <h1 className='text-xs'><Link href={'/works'}>View all {'~~>'}</Link></h1>
                     </div>
                </div>
                <div className="grid md:grid-cols-3 md:gap-2 2xl:gap-5 gap-4 mt-10 grid-cols-1 items-start">
@@ -78,7 +78,7 @@ function Project() {
                     }
 
                </div>
-          </div>
+          </div >
      )
 }
 
