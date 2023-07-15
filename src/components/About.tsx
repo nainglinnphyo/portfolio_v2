@@ -61,7 +61,7 @@ function About() {
                                    x: 0,
                                    boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.3)",
                               }}
-                              className='border border-green-500 w-max p-2 md:text-sm text-xs'><Link href={''} className=''>Read more {'->'}</Link></motion.div>
+                              className='border border-green-500 w-max p-2 md:text-sm text-xs'><Link href={'/about'} className=''>Read more {'->'}</Link></motion.div>
                     </div>
                     <div className='md:w-1/2 text-[0.36rem] md:text-[0.6rem] leading-2 relative'>
                          <div className='w-14 h-14 md:w-20 hidden md:block md:h-20 top-10 left-10 md:left-4 absolute'>
