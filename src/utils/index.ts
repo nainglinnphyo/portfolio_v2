@@ -53,7 +53,7 @@ export const projectOne = [
   {
     // image: "/img/Go.webp",
     title: "Eshop Mobile",
-    link: "",
+    link: "/",
     desc: "Ecommerce mobile app develop with react native and expo",
     techStack: "React Native, Expo",
   },
