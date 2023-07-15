@@ -18,7 +18,7 @@ function WorkPage() {
                     <span className='md:text-sm'>List of project and current work!</span>
                </div>
                <div className="grid md:grid-cols-3 md:gap-2 2xl:gap-5 gap-4 mt-10 grid-cols-1 items-start">
-                    {/* {
+                    {
                          allProjects.map((p) => {
                               return (
                                    <div className='border-[1.5px] border-[#acb2bf]' key={p.title}>
@@ -33,7 +33,7 @@ function WorkPage() {
                                    </div>
                               )
                          })
-                    } */}
+                    }
                </div>
 
                <div className='w-full gap-y-2 flex flex-col mt-8 py-2'>
