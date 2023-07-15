@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 function Hero() {
      return (
-          <motion.div className="px-4 md:px-8 min-h-[700px] h-screen flex flex-col items-center md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto bg-[url('/img/bg.svg')]" initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
+          <motion.div className="px-4 md:px-8 min-h-[700px]  flex flex-col items-center md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto bg-[url('/img/bg.svg')]" initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
                <div className=' md:flex items-center md:text-start text-center flex-col-reverse flex md:flex-row max-w-4xl mx-auto'>
                     <div className='md:mt-0 mt-2 w-full overflow-hidden'>
                          <div className='mt-2 md:mt-0'>
@@ -24,18 +24,6 @@ function Hero() {
                                    </pre>
                                    <br className='hidden md:block' />
                                    <span className='md:text-lg text-base'>I build & develop <span className='text-green-500'>web app</span>  <br className='md:hidden' /> and  <span className='text-green-500'>cross platform</span>!</span>
-                                   {/* <TypeAnimation
-                                        className='md:text-xl text-base'
-                                        sequence={[
-                                             'I build & develop web app!',
-                                             2000,
-                                             'I build & develop cross platform!',
-                                             2000,
-                                        ]}
-                                        style={{ color: '#21c55d' }}
-                                        speed={50}
-                                        repeat={Infinity}
-                                   /> */}
                               </h1>
                               <h1 className='md:text-sm text-xs mt-2 text-[#9398a4] text-start'>
                                    I'm a skilled fullstack developer proficient <br /> in JavaScript, TypeScript, PHP, and Golang.
