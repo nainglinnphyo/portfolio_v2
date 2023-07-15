@@ -40,7 +40,7 @@ export const projectOne = [
     title: "Nodejs Stream",
     link: "https://github.com/nainglinnphyo/node-live-stream",
     desc: "Live Stream Server with node js for live broadcasting.",
-    techStack: "Nodejs,",
+    techStack: "Nodejs",
   },
   {
     // image: "/img/Go.webp",
@@ -98,7 +98,7 @@ export const allProjects = [
 
   {
     // image: "/img/Go.webp",
-    title: "Eshop Moble",
+    title: "Eshop Mobile",
     link: "",
     desc: "Ecommerce mobile app develop with react native and expo",
     techStack: "React Native, Expo",

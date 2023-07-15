@@ -17,15 +17,11 @@ function WorkPage() {
                     <h1 className='md:text-xl text-lg'><span className='font-extrabold text-green-500'>#</span>work</h1>
                     <span className='md:text-sm'>List of project and current work!</span>
                </div>
-
                <div className="grid md:grid-cols-3 md:gap-2 2xl:gap-5 gap-4 mt-10 grid-cols-1 items-start">
-                    {
+                    {/* {
                          allProjects.map((p) => {
                               return (
                                    <div className='border-[1.5px] border-[#acb2bf]' key={p.title}>
-                                        {/* <div className='w-full h-44 relative'>
-                                             <Image src={p.image} alt={''} fill className='object-cover w-full h-full border-b-[1.5px] border-[#acb2bf]' />
-                                        </div> */}
                                         <h1 className='p-2 border-b-[1.5px] border-[#acb2bf]'>{p.techStack}</h1>
                                         <div className='p-2 flex flex-col justify-center h-auto space-y-4'>
                                              <h1 className=''>{p.title}</h1>
@@ -37,7 +33,7 @@ function WorkPage() {
                                    </div>
                               )
                          })
-                    }
+                    } */}
                </div>
 
                <div className='w-full gap-y-2 flex flex-col mt-8 py-2'>

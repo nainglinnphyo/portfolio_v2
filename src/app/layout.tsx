@@ -39,7 +39,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className='h-[100%]'>
         <Wrapper>
           {children}
         </Wrapper>

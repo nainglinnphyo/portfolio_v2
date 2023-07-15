@@ -37,7 +37,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
      }, [])
 
      return (
-          <div>
+          <div className='flex flex-col min-h-screen h-auto'>
                <motion.div className='hidden md:block pointer-events-none w-[0.35rem] h-[0.35rem] bg-[#abb1be] rounded-full z-[9999] fixed' style={{
                     translateX: cursorXSpring,
                     translateY: cursorYSpring,
