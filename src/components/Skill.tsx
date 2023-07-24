@@ -46,8 +46,8 @@ function Skill() {
                               className='bg-green-500 w-48 md:w-full h-[0.2rem]'></motion.div>
                     </div>
                </div>
-               <div className="flex py-10">
-                    <div className='relative w-[40%] h-72 hidden md:block mt-10'>
+               <div className="md:flex md:flex-row flex flex-col py-10">
+                    <div className='md:w-[40%] h-72 md:mt-10 mt-5'>
                          <ComputerModel />
                          {/* <div className='w-20 h-20 border border-[#acb2bf] absolute right-20'>
                          </div>
