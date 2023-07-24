@@ -42,7 +42,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className='h-[100%]'>
+      <body className="h-[100%] bg-[url('/img/bg.svg')]">
         <Wrapper>
           {children}
         </Wrapper>
