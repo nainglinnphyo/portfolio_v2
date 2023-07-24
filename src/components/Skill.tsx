@@ -47,7 +47,7 @@ function Skill() {
                     </div>
                </div>
                <div className="md:flex md:flex-row flex flex-col py-10">
-                    <div className='md:w-[40%] h-72 md:mt-10 mt-5'>
+                    <div className='md:w-[40%] flex justify-center items-center'>
                          <ComputerModel />
                          {/* <div className='w-20 h-20 border border-[#acb2bf] absolute right-20'>
                          </div>
