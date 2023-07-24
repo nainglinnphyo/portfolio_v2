@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+import ComputerModel from './Model';
 function Skill() {
      const [scrollValue, setScrollValue] = useState(0);
 
@@ -46,14 +47,15 @@ function Skill() {
                     </div>
                </div>
                <div className="flex py-10">
-                    <div className='relative w-[40%] h-72 hidden md:block'>
-                         <div className='w-20 h-20 border border-[#acb2bf] absolute right-20'>
+                    <div className='relative w-[40%] h-72 hidden md:block mt-10'>
+                         <ComputerModel />
+                         {/* <div className='w-20 h-20 border border-[#acb2bf] absolute right-20'>
                          </div>
                          <div className='w-14 h-14 border border-[#acb2bf] bottom-4 right-10 absolute'>
                          </div>
                          <Image src='/img/Dots.svg' width={70} height={70} alt='' className='absolute top-40 left-20' />
                          <Image src='/img/Dots.svg' width={60} height={60} alt='' className='absolute top-10 left-12' />
-                         <Image src='/img/Dots.svg' width={60} height={60} alt='' className='absolute bottom-28 left-60' />
+                         <Image src='/img/Dots.svg' width={60} height={60} alt='' className='absolute bottom-28 left-60' /> */}
                     </div>
                     <div className='grid grid-cols-2 md:grid-cols-3 md:gap-2 gap-3'>
                          <div className='border border-[#acb2bf]'>
@@ -93,7 +95,7 @@ function Skill() {
                                    Vs Code Linux <br />
                                    Ubuntu Server <br />
                                    Nginx Apache <br />
-                                   Jest Docker 
+                                   Jest Docker
                               </div>
                          </div>
                          <div className='border border-[#acb2bf] md:col-end-4'>

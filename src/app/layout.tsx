@@ -1,6 +1,8 @@
+
 import './globals.css'
 import favicon from '@/app/favicon.ico'
 import Wrapper from './wrapper'
+import ComputerModel from '@/components/Model'
 
 export default function RootLayout({
   children,
@@ -39,6 +41,7 @@ export default function RootLayout({
           }}
         />
       </head>
+
       <body className='h-[100%]'>
         <Wrapper>
           {children}

@@ -11,6 +11,7 @@ import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Link from 'next/link';
 import DropDownSocial from '@/components/DropDownSocial';
+import ComputerModel from '@/components/Model';
 
 export default function Home() {
   return (

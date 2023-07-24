@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
-
+import ComputerModel from '@/components/Model'
 function Hero() {
      return (
           <motion.div className="px-4 md:px-8 min-h-[700px] mb-16 flex flex-col items-center md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto bg-[url('/img/bg.svg')]" initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
