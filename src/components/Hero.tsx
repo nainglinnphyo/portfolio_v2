@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import ComputerModel from '@/components/Model'
+import SpaceModel from './SpaceModel'
 function Hero() {
      return (
           <motion.div className="px-4 md:px-8 min-h-[700px] mb-16 flex flex-col items-center md:pt-20  md:max-w-2xl lg:max-w-6xl mx-auto" initial={{ translateY: -100 }} animate={{ translateY: 0 }} exit={{ opacity: 0 }}>
@@ -34,7 +35,8 @@ function Hero() {
                          <div className='w-12 h-12 top-28 right-2 absolute text-xl -rotate-12'>
                               <Image src={'/code.svg'} alt={''} width={100} height={100} className='w-full h-full' />
                          </div>
-                         <div className='md:w-full md:h-full w-[95%] h-[95%] '>
+                         <div className='md:w-full md:h-full w-[95%] h-[95%]'>
+                              {/* <SpaceModel /> */}
                               <Image src='/img/MyPhoto.png' width={500} height={500} alt='' className='w-full h-full' />
                          </div>
                          <div className='w-60 h-8 md:w-64 border border-[#acb2bf] flex items-center'>
