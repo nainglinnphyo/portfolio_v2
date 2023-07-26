@@ -8,8 +8,7 @@ export function PcModel() {
 
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
-    console.log(a);
-    
+
     myMesh.current.rotation.y = 0.5 * a;
   });
   const gltf = useLoader(GLTFLoader, '/model/the_night_owls_desk.glb')

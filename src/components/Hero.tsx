@@ -36,7 +36,6 @@ function Hero() {
                               <Image src={'/code.svg'} alt={''} width={100} height={100} className='w-full h-full' />
                          </div>
                          <div className='md:w-full md:h-full w-[95%] h-[95%]'>
-                              {/* <SpaceModel /> */}
                               <Image src='/img/MyPhoto.png' width={500} height={500} alt='' className='w-full h-full' />
                          </div>
                          <div className='w-60 h-8 md:w-64 border border-[#acb2bf] flex items-center'>

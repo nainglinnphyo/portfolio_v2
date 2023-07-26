@@ -18,12 +18,10 @@ function AboutPage() {
                     setName('')
                     setEmail('')
                     setMessage('')
-                    console.log('SUCCESS!', response.status, response.text);
                }, (err) => {
                     setName('')
                     setEmail('')
                     setMessage('')
-                    console.log('FAILED...', err);
                });
      }
 
