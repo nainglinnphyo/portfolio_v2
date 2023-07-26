@@ -40,7 +40,8 @@ function NavBar() {
                               return (
                                    <div key={i.name} className={`${open ? 'mb-10 text-2xl' : 'hidden'} md:flex pl-8`}>
                                         <div className='flex'>
-                                             <span className='text-green-500'>#</span><Link onClick={() => setOpen(false)} href={i.path} className={`hover:text-white ${pathName === i.path ? 'text-white' : ''}`}>{i.name}</Link>
+                                             {/* <Link onClick={() => setOpen(false)} href={i.path} className={`border p-1 border-green-400 hover:text-white ${pathName === i.path ? '' : ''}`}>{i.name}</Link> */}
+                                             <span className='text-green-500'>#</span><Link onClick={() => setOpen(false)} href={i.path} className={`hover:text-green-400 ${pathName === i.path ? 'text-green-400' : ''}`}>{i.name}</Link>
                                         </div>
                                    </div>
                               )

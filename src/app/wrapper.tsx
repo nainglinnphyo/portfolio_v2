@@ -1,4 +1,5 @@
 'use client'
+import BottomMail from '@/components/BottomMail'
 import DropDownSocial from '@/components/DropDownSocial'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/Navbar'
@@ -50,6 +51,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
                </motion.div>
                <NavBar />
                <DropDownSocial />
+               <BottomMail/>
                {children}
                <Footer />
           </div>
