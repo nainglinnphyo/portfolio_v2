@@ -1,9 +1,8 @@
 'use client'
 import React from 'react'
-import styles from '@/styles/about.module.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image'
-import { allProjects, projectOne } from '@/utils';
+import { allProjects } from '@/utils';
 import Link from 'next/link';
 
 function WorkPage() {

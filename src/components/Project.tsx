@@ -1,11 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import styles from '@/styles/about.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
-import LineAnimation from './LineAnimation';
-import { motion, useAnimationControls, useInView } from 'framer-motion';
-import NestImg from '../../public/img/nest.png'
+import { motion } from 'framer-motion';
 import { projectOne } from '@/utils';
 
 function Project() {
@@ -61,9 +57,6 @@ function Project() {
                          projectOne.map((p) => {
                               return (
                                    <div className='border-[1.5px] border-[#acb2bf]' key={p.title}>
-                                        {/* <div className='w-full h-44 relative'>
-                                             <Image src={p.image} alt={''} fill className='object-cover w-full h-full border-b-[1.5px] border-[#acb2bf]' />
-                                        </div> */}
                                         <h1 className='p-2 border-b-[1.5px] border-[#acb2bf]'>{p.techStack}</h1>
                                         <div className='p-2 flex flex-col justify-center h-auto space-y-4'>
                                              <h1 className=''>{p.title}</h1>

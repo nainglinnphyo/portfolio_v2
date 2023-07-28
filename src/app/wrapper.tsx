@@ -3,8 +3,8 @@ import BottomMail from '@/components/BottomMail'
 import DropDownSocial from '@/components/DropDownSocial'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/Navbar'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
-import React, { useEffect, useState } from 'react'
+import { AnimatePresence, motion, useMotionValue, useSpring } from 'framer-motion'
+import React, { useEffect } from 'react'
 
 function Wrapper({ children }: { children: React.ReactNode }) {
 
@@ -38,23 +38,25 @@ function Wrapper({ children }: { children: React.ReactNode }) {
      }, [])
 
      return (
-          <div className='flex flex-col min-h-screen h-auto'>
-               <motion.div className='hidden md:block pointer-events-none w-[0.35rem] h-[0.35rem] bg-[#abb1be] rounded-full z-[9999] fixed' style={{
-                    translateX: cursorXSpring,
-                    translateY: cursorYSpring,
-               }}>
-               </motion.div>
-               <motion.div className={`hidden md:block pointer-events-none w-6 h-6 rounded-full border-[2px] border-[#abb1be] z-[9999] fixed`} style={{
-                    translateX: backWardXSpring,
-                    translateY: backWardYSpring,
-               }}>
-               </motion.div>
-               <NavBar />
-               <DropDownSocial />
-               <BottomMail/>
-               {children}
-               <Footer />
-          </div>
+          <AnimatePresence>
+               <div className='flex flex-col min-h-screen h-auto'>
+                    <motion.div className='hidden md:block pointer-events-none w-[0.35rem] h-[0.35rem] bg-[#abb1be] rounded-full z-[9999] fixed' style={{
+                         translateX: cursorXSpring,
+                         translateY: cursorYSpring,
+                    }}>
+                    </motion.div>
+                    <motion.div className={`hidden md:block pointer-events-none w-6 h-6 rounded-full border-[2px] border-[#abb1be] z-[9999] fixed`} style={{
+                         translateX: backWardXSpring,
+                         translateY: backWardYSpring,
+                    }}>
+                    </motion.div>
+                    <NavBar />
+                    <DropDownSocial />
+                    <BottomMail />
+                    {children}
+                    <Footer />
+               </div>
+          </AnimatePresence>
      )
 }
 

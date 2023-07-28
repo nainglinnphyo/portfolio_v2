@@ -1,12 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import styles from '@/styles/about.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import LineAnimation from './LineAnimation';
-import { motion, useAnimationControls, useInView } from 'framer-motion';
-import NestImg from '../../public/img/nest.png'
-import { projectOne } from '@/utils';
+import { motion } from 'framer-motion';
 
 function About() {
 

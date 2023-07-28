@@ -1,7 +1,6 @@
 'use client'
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
 import ComputerModel from './Model';
 function Skill() {
      const [scrollValue, setScrollValue] = useState(0);
@@ -49,13 +48,6 @@ function Skill() {
                <div className="md:flex md:flex-row flex flex-col py-10">
                     <div className='md:w-[40%] flex justify-center items-center'>
                          <ComputerModel />
-                         {/* <div className='w-20 h-20 border border-[#acb2bf] absolute right-20'>
-                         </div>
-                         <div className='w-14 h-14 border border-[#acb2bf] bottom-4 right-10 absolute'>
-                         </div>
-                         <Image src='/img/Dots.svg' width={70} height={70} alt='' className='absolute top-40 left-20' />
-                         <Image src='/img/Dots.svg' width={60} height={60} alt='' className='absolute top-10 left-12' />
-                         <Image src='/img/Dots.svg' width={60} height={60} alt='' className='absolute bottom-28 left-60' /> */}
                     </div>
                     <div className='grid grid-cols-2 md:grid-cols-3 md:gap-2 gap-3'>
                          <div className='border border-[#acb2bf]'>

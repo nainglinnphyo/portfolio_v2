@@ -1,9 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
-import ComputerModel from '@/components/Model'
 
 function Hero() {
      return (
@@ -36,7 +34,7 @@ function Hero() {
                               <Image src={'/code.svg'} alt={''} width={100} height={100} className='w-full h-full' />
                          </div>
                          <div className='md:w-full md:h-full w-[95%] h-[95%]'>
-                              <Image src='/img/MyPhoto.png' width={500} height={500} alt='' className='w-full h-full' />
+                              <Image src='/img/CompressPic.png' width={500} height={500} alt='' className='w-full h-full' />
                          </div>
                          <div className='w-60 h-8 md:w-64 border border-[#acb2bf] flex items-center'>
                               <div className=' ml-2 w-4 h-4 bg-green-500'>

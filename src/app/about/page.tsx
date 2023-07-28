@@ -14,11 +14,11 @@ function AboutPage() {
      const submit = (e: React.FormEvent<HTMLFormElement>) => {
           e.preventDefault();
           emailjs.send('service_98k553b', 'template_aj3m5of', { from_name: name, from_email: email, message: message }, 'JbaGMvyx_V1H0YdE0')
-               .then((response) => {
+               .then(() => {
                     setName('')
                     setEmail('')
                     setMessage('')
-               }, (err) => {
+               }, () => {
                     setName('')
                     setEmail('')
                     setMessage('')
