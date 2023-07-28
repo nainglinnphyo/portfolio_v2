@@ -13,12 +13,28 @@ function Footer() {
         </div>
         <div className='space-y-2 py-4'>
           <h1>Media</h1>
-          <div className='flex space-x-1'>
-            <Link href='https://github.com/nainglinnphyo' target='_blank'><Icon icon='mdi:github' width={25} height={25} /></Link>
-            <Link href='https://www.linkedin.com/in/naing-linn-phyo-768852175/' target='_blank'><Icon icon='entypo-social:linkedin-with-circle' width={25} height={25} /></Link>
-            <Link href='https://telegram.me/defined_me' target='_blank'><Icon icon='ic:baseline-telegram' width={25} height={25} /></Link>
-            <Link href='https://instagram.com/naing_linnphyo' target='_blank'><Icon icon='ri:instagram-line' width={25} height={25} /></Link>
-          </div>
+          <div className='flex space-x-2 items-center'>
+                    <Link href='https://github.com/nainglinnphyo' target='_blank' className='cursor-pointer'>
+                         <Icon icon='mdi:github' color='#acb2bf'
+                              className={`h-6 w-6`}
+                         />
+                    </Link>
+                    <Link href='https://www.linkedin.com/in/naing-linn-phyo-768852175/' target='_blank' className='cursor-pointer'>
+                         <Icon icon='entypo-social:linkedin-with-circle' color='#acb2bf'
+                              className={`h-6 w-6`}
+                         />
+                    </Link>
+                    <Link href='https://telegram.me/defined_me' target='_blank' className='cursor-pointer'>
+                         <Icon icon='ic:baseline-telegram' color='#acb2bf'
+                              className={`h-6 w-6`}
+                         />
+                    </Link>
+                    <Link href='https://instagram.com/naing_linnphyo' target='_blank' className='cursor-pointer'>
+                         <Icon icon='ri:instagram-line' color='#acb2bf'
+                              className={`h-6 w-6`}
+                         />
+                    </Link>
+               </div>
         </div>
       </div >
       <span className="text-sm py-2 text-gray-500 dark:text-gray-300 text-center flex justify-center">© 2023 Made by NaingLinnPhyo
