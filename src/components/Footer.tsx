@@ -14,22 +14,22 @@ function Footer() {
         <div className='space-y-2 py-4'>
           <h1>Media</h1>
           <div className='flex space-x-2 items-center'>
-                    <Link href='https://github.com/nainglinnphyo' target='_blank' className='cursor-pointer'>
+                    <Link href='https://github.com/nainglinnphyo' target='_blank' className='cursor-pointer' title='github'>
                          <Icon icon='mdi:github' color='#acb2bf'
                               className={`h-6 w-6`}
                          />
                     </Link>
-                    <Link href='https://www.linkedin.com/in/naing-linn-phyo-768852175/' target='_blank' className='cursor-pointer'>
+                    <Link href='https://www.linkedin.com/in/naing-linn-phyo-768852175/' target='_blank' className='cursor-pointer' title='linkedin'>
                          <Icon icon='entypo-social:linkedin-with-circle' color='#acb2bf'
                               className={`h-6 w-6`}
                          />
                     </Link>
-                    <Link href='https://telegram.me/defined_me' target='_blank' className='cursor-pointer'>
+                    <Link href='https://telegram.me/defined_me' target='_blank' className='cursor-pointer' title='telegram'>
                          <Icon icon='ic:baseline-telegram' color='#acb2bf'
                               className={`h-6 w-6`}
                          />
                     </Link>
-                    <Link href='https://instagram.com/naing_linnphyo' target='_blank' className='cursor-pointer'>
+                    <Link href='https://instagram.com/naing_linnphyo' target='_blank' className='cursor-pointer' title='instagram'>
                          <Icon icon='ri:instagram-line' color='#acb2bf'
                               className={`h-6 w-6`}
                          />
