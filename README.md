@@ -40,7 +40,7 @@ This repository serves as a central hub for showcasing my work and projects. It'
 
 ## Get in Touch
 
-I'm open to new opportunities, collaborations, and challenges. If you're interested in working with me or just want to say hello, please feel free to reach out via email at [nainglinnphyo24@gmail.com] or connect with me on [LinkedIn](https://www.linkedin.com/in/dev-nainglinnphyo).
+I'm open to new opportunities, collaborations, and challenges. If you're interested in working with me or just want to say hello, please feel free to reach out via email at nainglinnphyo24@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/dev-nainglinnphyo).
 
 ## Thank You
 
