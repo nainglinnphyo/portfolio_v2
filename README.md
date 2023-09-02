@@ -10,6 +10,18 @@ Welcome to my portfolio showcase repository! 🔥
 
 This repository serves as a central hub for showcasing my work and projects. It's designed to provide a comprehensive overview of my skills, experience, and the projects I've worked on. Whether you're a potential employer, collaborator, or just curious, you'll find everything you need to know about my capabilities and the exciting work I've done.
 
+## Key Technologies
+
+- **TypeScript & JavaScript:** Ensuring a strong and maintainable codebase to support all the interactive features.
+
+- **Next.js:** Providing server-rendered React applications for blazing-fast page loads and SEO optimization.
+
+- **Three.js:** Driving immersive 3D graphics and animations that bring my projects to life.
+
+- **Tailwind CSS:** Crafting a responsive and visually pleasing design with ease.
+
+- **Framer Motion:** Adding smooth and captivating animations to engage visitors.
+
 ## Features
   
 - **Home:** Get insights into the technologies, languages, and tools I'm proficient in.
