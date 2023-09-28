@@ -26,7 +26,7 @@ function WorkPage() {
                                              <h1 className=''>{p.title}</h1>
                                              <p className='text-sm'>{p.desc}</p>
                                              <div className='border-green-500  border-[1.5px] w-20'>
-                                                  <h1 className='text-sm p-2'><Link href={p.link}>Code{'<~>'}</Link></h1>
+                                                  <h1 className='text-sm p-2'><Link href={p.link} target='_blank'>Code{'<~>'}</Link></h1>
                                              </div>
                                         </div>
                                    </div>
