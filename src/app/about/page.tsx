@@ -48,14 +48,15 @@ function AboutPage() {
 
                     >
                          <div className='text-[#645B69]'>··</div>
-                         <span className='text-[#645B69]'>{'//'} Hello, Enjoy Everyone</span>
+                         <span className='text-[#645B69]'>{'//'} Welcome </span>
                     </div>
                     <div className='flex hover:bg-[#362c3d] px-2 py-1'
 
                     >
                          <div className='text-[#645B69]'>··</div>
-                         <span className='text-[#645B69]'>{'//'} Huu yay ya dr ma lwal bu</span>
+                         <span className='text-[#645B69]'>{'//'} Enjoy Everyone</span>
                     </div>
+                    
                     <div className='flex hover:bg-[#362c3d] px-2 py-1'
 
                     >
