@@ -30,11 +30,11 @@ function Hero() {
                          </div>
                     </div>
                     <div className='flex-col flex items-center md:w-1/3 relative '>
-                         <div className='w-12 h-12 top-28 right-2 absolute text-xl -rotate-12'>
+                         {/* <div className='w-12 h-12 top-28 right-2 absolute text-xl -rotate-12'>
                               <Image src={'/code.svg'} alt={''} width={100} height={100} className='w-full h-full' />
-                         </div>
+                         </div> */}
                          <div className='md:w-full md:h-full w-[95%] h-[95%]'>
-                              <Image src='/img/CompressPic.png' width={500} height={500} alt='' className='w-full h-full' />
+                              <Image src='/img/BackgroundImage.png' width={500} height={500} alt='' className='w-full h-full' />
                          </div>
                          <div className='w-60 h-8 md:w-64 border border-[#acb2bf] flex items-center'>
                               <div className=' ml-2 w-4 h-4 bg-green-500'>
